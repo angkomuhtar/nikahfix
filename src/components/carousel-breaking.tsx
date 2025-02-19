@@ -21,7 +21,7 @@ const CarouselBreaking = () => {
               <Card className='rounded-none border-none'>
                 <CardContent className='flex aspect-square items-center justify-center relative'>
                   <Image
-                    src={`/photo${index + 1}.jpg`}
+                    src={`/images/photo${index + 1}.jpg`}
                     alt='Mesias'
                     layout='fill'
                     objectFit='cover'

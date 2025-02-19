@@ -60,7 +60,7 @@ const Cover = () => {
             <div className='py-10'>
               <div className='relative aspect-square w-44 bg-white rounded-lg'>
                 <Image
-                  src='/photo1.jpg'
+                  src='/images/photo1.jpg'
                   alt='Mesias'
                   layout='fill'
                   objectFit='cover'

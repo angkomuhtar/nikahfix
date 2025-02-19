@@ -17,7 +17,7 @@ const CarouselPhoto = () => {
             <CarouselItem key={index} className='p-0 h-full w-full'>
               <div className='relative h-[calc(100vh-50px)] w-full p-2'>
                 <Image
-                  src={`/photo${index + 1}.jpg`}
+                  src={`/images/photo${index + 1}.jpg`}
                   alt='Mesias&Shawier'
                   layout='fill'
                   objectFit='cover'

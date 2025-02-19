@@ -30,7 +30,7 @@ export default function Home() {
             <div className='w-full min-h-screen flex flex-col items-center justify-center py-20'>
               <div className='relative w-full aspect-video'>
                 <Image
-                  src='/documenter.jpg'
+                  src='/images/documenter.jpg'
                   alt=''
                   fill
                   layout='fill'
@@ -119,7 +119,7 @@ export default function Home() {
                   <div className='pb-16'>
                     <div className='w-full aspect-[3/4] relative'>
                       <Image
-                        src='/brides.jpg'
+                        src='/images/brides.jpg'
                         alt='Mesias'
                         layout='fill'
                         objectFit='cover'
@@ -137,7 +137,7 @@ export default function Home() {
                   <div className='pb-16'>
                     <div className='w-full aspect-[3/4] relative'>
                       <Image
-                        src='/groom.jpg'
+                        src='/images/groom.jpg'
                         alt='Shawir'
                         layout='fill'
                         objectFit='cover'
@@ -171,7 +171,7 @@ export default function Home() {
               <div className='w-full grid grid-cols-2 gap-4'>
                 <div className='w-full relative aspect-[12/10]'>
                   <Image
-                    src='/akad.jpg'
+                    src='/images/akad.jpg'
                     alt='Mesias'
                     layout='fill'
                     objectFit='cover'
@@ -219,7 +219,7 @@ export default function Home() {
               <div className='w-full grid grid-cols-2 gap-4'>
                 <div className='w-full relative aspect-[12/10]'>
                   <Image
-                    src='/photo4.jpg'
+                    src='/images/photo4.jpg'
                     alt='Mesias'
                     layout='fill'
                     objectFit='cover'
