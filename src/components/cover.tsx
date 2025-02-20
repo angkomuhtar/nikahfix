@@ -51,14 +51,24 @@ const Cover = () => {
         <DialogContent className=''>
           <div
             className={`fixed transform duration-300 ease-out z-50 overflow-hidden top-0 right-0 left-0 flex flex-col items-center justify-center py-20 space-y-4 bg-black w-full h-screen`}>
-            <h1 className='text-sm font-normal font-sans text-white'>
-              THE WEDDING OF
-            </h1>
-            <h1 className='text-4xl font-mono text-red-500'>
-              MESIAS & SHAWIER
-            </h1>
-            <div className='py-10'>
-              <div className='relative aspect-square w-44 bg-white rounded-lg'>
+            <div className='relative h-12 aspect-[8/2]'>
+              <Image
+                src={`/nikahfix.webp`}
+                alt='Mesias&Shawir'
+                layout='fill'
+                objectFit='center'
+              />
+            </div>
+            <div className='text-center'>
+              <h1 className='text-xs font-normal font-sans text-white'>
+                THE WEDDING OF
+              </h1>
+              <h1 className='text-2xl font-mono text-red-500'>
+                MESIAS & SHAWIR
+              </h1>
+            </div>
+            <div className='py-8'>
+              <div className='relative aspect-square w-40 bg-white rounded-lg'>
                 <Image
                   src='/images/photo1.jpg'
                   alt='Mesias'

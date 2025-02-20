@@ -1,7 +1,8 @@
 import CarouselPhoto from "@/components/carousel";
 import CarouselBreaking from "@/components/carousel-breaking";
+import CountDown from "@/components/count-down";
 import Cover from "@/components/cover";
-import DayCount from "@/components/days-count";
+import Gallery from "@/components/gallery";
 import {
   CalendarDays,
   ChevronsUp,
@@ -56,12 +57,7 @@ export default function Home() {
                 <h3 className='text-white font-sans font-semibold text-xl mt-2'>
                   Mesias & Shawir : Getting Married
                 </h3>
-                <div className='flex space-x-2 mt-4'>
-                  <DayCount count='28' type='Days' />
-                  <DayCount count='12' type='Hours' />
-                  <DayCount count='30' type='Minutes' />
-                  <DayCount count='50' type='Seconds' />
-                </div>
+                <CountDown />
                 <div className='flex space-x-2 mt-4 mb-2'>
                   <p className='text-green-500 font-sans text-xs'>100% match</p>
                   <Image
@@ -263,6 +259,15 @@ export default function Home() {
                     </h3>
                   </a>
                 </div>
+              </div>
+            </div>
+
+            <div className='w-full min-h-screen flex flex-col justify-center space-y-14 px-4'>
+              <div className='w-full'>
+                <h3 className='text-white font-sans font-semibold text-xl mt-2 mb-2'>
+                  Our Gallery
+                </h3>
+                <Gallery />
               </div>
             </div>
           </div>
