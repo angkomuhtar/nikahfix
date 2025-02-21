@@ -277,7 +277,7 @@ export default function Home() {
               <h3 className='text-white text-center font-sans font-semibold text-xl mt-2 mb-4'>
                 Turut Mengundang
               </h3>
-              <ul className='text-white font-sans font-medium text-sm grid grid-cols-2 gap-3 text-center'>
+              <ul className='text-white font-sans font-light text-xs grid grid-cols-2 gap-3 text-center'>
                 <li>
                   <p>Keluarga Bapak H. Liangto (Alm) & Ibu Hj. Rehana</p>
                 </li>
@@ -297,16 +297,16 @@ export default function Home() {
                   <p>Keluarga Bapak H. Faisal Idrus</p>
                 </li>
                 <li className='col-span-2'>
-                  <p>Keluarga Bapa Ilham Firdaus Rizky Perkasa</p>
+                  <p>Keluarga Bapak Ilham Firdaus Rizky Perkasa</p>
                 </li>
               </ul>
             </div>
 
             <div className='w-full flex flex-col md:px-4 my-12 py-4 rounded-md'>
               <p className='text-white font-sans font-medium text-sm text-center'>
-                Merupakan sebuah kehormatan dan kebahagiaan bagi kami, apabila
-                anda berkenan memberikan doa restu serta berkesempatan hadir di
-                acara pernikahan kami.
+                Merupakan anugerah dan kebahagiaan bagi kami jika Anda berkenan
+                memberikan doa restu serta meluangkan waktu untuk hadir dan
+                berbagi kebahagiaan di hari istimewa pernikahan kami.
               </p>
               <p className='text-white font-sans font-medium text-sm text-center mt-8'>
                 Terima kasih atas perhatian dan doa restu yang diberikan.
