@@ -3,6 +3,8 @@ import CarouselBreaking from "@/components/carousel-breaking";
 import CountDown from "@/components/count-down";
 import Cover from "@/components/cover";
 import Gallery from "@/components/gallery";
+import Reservasi from "@/components/reservasi";
+import WeddingGift from "@/components/wedding-gift";
 import {
   CalendarDays,
   ChevronsUp,
@@ -103,8 +105,8 @@ export default function Home() {
                 </p>
                 <p className='text-sm text-white font-sans font-medium mt-4'>
                   Maha Suci Allah SWT yang telah menciptakan makhluk-Nya
-                  berpasangan-pasangan, Perkenankan kami merangkaikan kkasih
-                  sayang yang kau ciptakan diantara putra putri kami.
+                  berpasangan-pasangan, Perkenankan kami merangkaikan kasih
+                  sayang yang kau ciptakan di antara putra putri kami.
                 </p>
               </div>
               <div className='w-full px-4'>
@@ -262,13 +264,52 @@ export default function Home() {
               </div>
             </div>
 
-            <div className='w-full min-h-screen flex flex-col justify-center space-y-14 px-4'>
-              <div className='w-full'>
-                <h3 className='text-white font-sans font-semibold text-xl mt-2 mb-2'>
-                  Our Gallery
-                </h3>
-                <Gallery />
-              </div>
+            <Gallery />
+
+            <Reservasi />
+
+            <WeddingGift />
+            <div className='w-full flex flex-col md:px-4 my-12 bg-zinc-900 py-4 rounded-md'>
+              <h3 className='text-white text-center font-sans font-semibold text-xl mt-2 mb-4'>
+                Turut Mengundang
+              </h3>
+              <ul className='text-white font-sans font-medium text-sm grid grid-cols-2 gap-3 text-center'>
+                <li>
+                  <p>Keluarga Bapak H. Liangto (Alm) & Ibu Hj. Rehana</p>
+                </li>
+                <li>
+                  <p>Keluarga Bapak Muh. Tahang (Alm) & Ibu Hj. Ruaena</p>
+                </li>
+                <li>
+                  <p>Keluarga Ibu Hj. Maimunah (Alm)</p>
+                </li>
+                <li>
+                  <p>Keluarga Bapak H. Ir. Kusmainoor (Alm)</p>
+                </li>
+                <li>
+                  <p>Keluarga Ibu Hj. Hairunnisa</p>
+                </li>
+                <li>
+                  <p>Keluarga Bapak H. Faisal Idrus</p>
+                </li>
+                <li className='col-span-2'>
+                  <p>Keluarga Bapa Ilham Firdaus Rizky Perkasa</p>
+                </li>
+              </ul>
+            </div>
+
+            <div className='w-full flex flex-col md:px-4 my-12 py-4 rounded-md'>
+              <p className='text-white font-sans font-medium text-sm text-center'>
+                Merupakan sebuah kehormatan dan kebahagiaan bagi kami, apabila
+                anda berkenan memberikan doa restu serta berkesempatan hadir di
+                acara pernikahan kami.
+              </p>
+              <p className='text-white font-sans font-medium text-sm text-center mt-8'>
+                Terima kasih atas perhatian dan doa restu yang diberikan.
+              </p>
+              <p className='text-white font-mono text-3xl text-center mt-2'>
+                Mesias & Shawir
+              </p>
             </div>
           </div>
         </main>

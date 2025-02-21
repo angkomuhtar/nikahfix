@@ -29,7 +29,6 @@ const CarouselPhoto = () => {
         </CarouselContent>
       </Carousel>
       <div className='absolute bottom-0 left-0 right-0 p-4 py-8 lg:px-12 grid from-black bg-gradient-to-t to-blacck/0'>
-        {/* <h1 className='text-red-500 text-xl font-mono'>M & S</h1> */}
         <div className='py-1 px-2 bg-white/80 place-self-start rounded-md'>
           <div className='relative h-6 aspect-[8/2]'>
             <Image
@@ -53,7 +52,7 @@ const CarouselPhoto = () => {
         </div>
         <div className='flex space-x-2 py-1 items-center'>
           <span className='py-1 px-2 bg-gray-700 text-white font-sans rounded-md text-[10px] font-bold'>
-            #getmerried
+            #getmarried
           </span>
           <span className='py-1 px-2 bg-gray-700 text-white font-sans rounded-md text-[10px] font-bold'>
             #lovestory

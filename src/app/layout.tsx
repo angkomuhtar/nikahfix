@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Bebas_Neue } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 const dmsans = DM_Sans({
   variable: "--font-dm-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${dmsans.variable} ${bebasNeue.variable} antialiased`}>
         {children}
+        <Toaster />
       </body>
     </html>
   );

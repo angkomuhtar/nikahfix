@@ -29,33 +29,40 @@ const Gallery = () => {
     "/images/photo9.jpg",
   ];
   return (
-    <div className='grid grid-cols-3 gap-2'>
-      {images.map((data, index) => (
-        <div
-          key={index}
-          className='relative aspect-[6/9] cursor-pointer'
-          onClick={() => openImageViewer(index)}>
-          <Image
-            src={data}
-            alt={`${index + 1}`}
-            layout='fill'
-            objectFit='cover'
-            className='rounded-lg'
-          />
+    <div className='w-full min-h-screen flex flex-col justify-center space-y-14 px-4'>
+      <div className='w-full'>
+        <h3 className='text-white font-sans font-semibold text-xl mt-2 mb-2'>
+          Our Gallery
+        </h3>
+        <div className='grid grid-cols-3 gap-2'>
+          {images.map((data, index) => (
+            <div
+              key={index}
+              className='relative aspect-[6/9] cursor-pointer'
+              onClick={() => openImageViewer(index)}>
+              <Image
+                src={data}
+                alt={`${index + 1}`}
+                layout='fill'
+                objectFit='cover'
+                className='rounded-lg'
+              />
+            </div>
+          ))}
+          {isViewerOpen && (
+            <ImageViewer
+              src={images}
+              currentIndex={currentImage}
+              onClose={closeImageViewer}
+              disableScroll={false}
+              backgroundStyle={{
+                backgroundColor: "rgba(0,0,0,0.9)",
+              }}
+              closeOnClickOutside={true}
+            />
+          )}
         </div>
-      ))}
-      {isViewerOpen && (
-        <ImageViewer
-          src={images}
-          currentIndex={currentImage}
-          onClose={closeImageViewer}
-          disableScroll={false}
-          backgroundStyle={{
-            backgroundColor: "rgba(0,0,0,0.9)",
-          }}
-          closeOnClickOutside={true}
-        />
-      )}
+      </div>
     </div>
   );
 };
