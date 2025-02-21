@@ -13,7 +13,7 @@ import { toast } from "sonner";
 
 const WeddingGift = () => {
   return (
-    <div className='w-full flex flex-col space-y-14 px-4'>
+    <div className='w-full flex flex-col space-y-14 px-4 min-h-[60vh]'>
       <div className='w-full'>
         <h3 className='text-white font-sans font-semibold text-xl mt-2 mb-2'>
           Wedding Gift

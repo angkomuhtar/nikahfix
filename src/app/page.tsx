@@ -77,9 +77,10 @@ export default function Home() {
                   />
                 </div>
                 <p className='text-sm text-white font-sans font-semibold'>
-                  Setelah Mesias & Shawir dipertemukan dalam situasi yang tepat,
-                  di mana keduanya telah siap untuk memulai hubungan bersama,
-                  tibalah mereka di awal perjalanan baru menuju pernikahan.
+                  Dalam takdir yang indah, Mesias dan Shawir akhirnya
+                  dipertemukan di waktu yang sempurna. Dengan hati yang telah
+                  siap saling melengkapi, mereka memulai kisah cinta yang baru,
+                  melangkah bersama menuju janji suci pernikahan
                 </p>
                 <p className='text-white/70 font-sans mt-4 italic text-xs'>
                   &ldquo;Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia

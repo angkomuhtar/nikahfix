@@ -15,7 +15,7 @@ const CarouselPhoto = () => {
         <CarouselContent>
           {Array.from({ length: 4 }).map((_, index) => (
             <CarouselItem key={index} className='p-0 h-full w-full'>
-              <div className='relative h-[calc(100vh-50px)] w-full p-2'>
+              <div className='relative h-[85vh] w-full p-2'>
                 <Image
                   src={`/images/photo${index + 1}.jpg`}
                   alt='Mesias&Shawir'
