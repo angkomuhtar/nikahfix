@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useRef, useState } from "react";
+import React, { Suspense, useRef, useState } from "react";
 import NamaTamu from "./nama-tamu";
 import { Dialog, DialogContent, DialogTitle } from "./ui/dialog";
 import { Button } from "./ui/button";
@@ -79,7 +79,9 @@ const Cover = () => {
               </div>
             </div>
             <h1 className='text-white font-sans text-xs'>Kepada yth.</h1>
-            <NamaTamu />
+            <Suspense>
+              <NamaTamu />
+            </Suspense>
             <div className='py-6'>
               <span
                 className='px-4 py-2 mt-10 border border-red-500 hover:bg-red-500 text-white rounded-lg font-mono cursor-pointer'

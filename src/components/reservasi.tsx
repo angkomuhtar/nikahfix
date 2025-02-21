@@ -22,30 +22,54 @@ import {
 } from "./ui/select";
 import { Textarea } from "./ui/textarea";
 import { useSearchParams } from "next/navigation";
-
-const formSchema = z.object({
-  nama: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
-  kehadiran: z.string().min(2, { message: "Kehadiran harus diisi." }),
-  pesan: z.string().min(2, { message: "Pesan harus diisi." }),
-});
+import { formSchema } from "@/lib/schema";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { getdata, storeData } from "@/lib/data";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { toast } from "sonner";
+import moment from "moment";
 
 const Reservasi = () => {
-  const searchPage = useSearchParams();
-  const tamu = searchPage.get("to");
+  const to = useSearchParams().get("to");
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      nama: tamu ?? undefined,
+      nama: to ?? undefined,
+    },
+  });
+
+  const {
+    data: pesan,
+  }: {
+    data?: {
+      data: { id: string; nama: string; pesan: string; createdAt: string }[];
+      count: number;
+    };
+  } = useQuery({
+    queryKey: ["pesan"],
+    queryFn: getdata,
+  });
+
+  const queryClient = useQueryClient();
+  const mutation = useMutation({
+    mutationFn: storeData,
+    onSuccess: (res) => {
+      // console.log(res);
+      if (res?.success) {
+        queryClient.invalidateQueries({ queryKey: ["pesan"] });
+        form.reset();
+        toast("Pesan berhasil dikirim");
+      } else {
+        toast("Pesan Gagal dikirim");
+      }
     },
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+    mutation.mutate(values);
   }
   return (
-    <div className='w-full h-screen flex flex-col py-10 px-4 overflow-auto'>
+    <div className='w-full flex flex-col py-28 px-4 overflow-auto'>
       <h3 className='text-white font-sans font-semibold text-xl mb-4'>
         Wish for the Couple
       </h3>
@@ -112,6 +136,33 @@ const Reservasi = () => {
             </Button>
           </form>
         </Form>
+      </div>
+      <div className='mt-4 px-6'>
+        {(pesan?.count ?? 0) > 0 ? (
+          pesan?.data?.map((item) => (
+            <div className='flex items-center space-x-4' key={item.id}>
+              <Avatar>
+                <AvatarImage src='https://github.com/shadcn.png' />
+                <AvatarFallback>NF</AvatarFallback>
+              </Avatar>
+              <div className=''>
+                <h3 className='font-sans text-sm font-semibol text-white'>
+                  {item?.nama}
+                </h3>
+                <p className='font-light text-xs text-white font-sans mt-2'>
+                  {item?.pesan}
+                </p>
+                <p className='text-white text-[10px] font-sans italic font-extralight mt-2'>
+                  {moment(item?.createdAt).fromNow()}
+                </p>
+              </div>
+            </div>
+          ))
+        ) : (
+          <p className='font-light text-xs text-white font-sans text-center my-10'>
+            Beluam ada data
+          </p>
+        )}
       </div>
     </div>
   );

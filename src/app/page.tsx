@@ -13,6 +13,7 @@ import {
   Navigation,
 } from "lucide-react";
 import Image from "next/image";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
@@ -266,7 +267,9 @@ export default function Home() {
 
             <Gallery />
 
-            <Reservasi />
+            <Suspense fallback={<div>Loading...</div>}>
+              <Reservasi />
+            </Suspense>
 
             <WeddingGift />
             <div className='w-full flex flex-col md:px-4 my-12 bg-zinc-900 py-4 rounded-md'>
