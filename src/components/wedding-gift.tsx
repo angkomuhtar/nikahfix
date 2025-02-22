@@ -100,7 +100,9 @@ const WeddingGift = () => {
                         className='flex space-x-2'
                         onClick={() => {
                           const copy = async () => {
-                            await navigator.clipboard.writeText("0909958508");
+                            await navigator.clipboard.writeText(
+                              "1490006346268"
+                            );
                             toast("Rekening Telah Disalin", {
                               duration: 1000,
                             });

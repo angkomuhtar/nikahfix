@@ -9,7 +9,7 @@ export async function getdata() {
       orderBy: {
         createdAt: "desc",
       },
-      take: 7,
+      // take: 7,
     });
 
     const count = await prisma.post.count();

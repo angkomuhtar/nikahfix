@@ -69,7 +69,7 @@ const Reservasi = () => {
     mutation.mutate(values);
   }
   return (
-    <div className='w-full flex flex-col py-28 px-4 overflow-auto'>
+    <div className='w-full flex flex-col py-18 px-4 overflow-auto max-h-screen mb-20'>
       <h3 className='text-white font-sans font-semibold text-xl mb-4'>
         Wish for the Couple
       </h3>
@@ -137,10 +137,10 @@ const Reservasi = () => {
           </form>
         </Form>
       </div>
-      <div className='mt-4 px-6'>
+      <div className='mt-4 px-6 overflow-auto'>
         {(pesan?.count ?? 0) > 0 ? (
           pesan?.data?.map((item) => (
-            <div className='flex items-center space-x-4' key={item.id}>
+            <div className='flex items-center space-x-4 my-2' key={item.id}>
               <Avatar>
                 <AvatarImage src='https://github.com/shadcn.png' />
                 <AvatarFallback>NF</AvatarFallback>
