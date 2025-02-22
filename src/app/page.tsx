@@ -315,6 +315,12 @@ export default function Home() {
                 Mesias & Shawir
               </p>
             </div>
+
+            <div className='w-full flex flex-col md:px-4 my-12 py-4 rounded-md'>
+              <p className='text-white font-sans font-medium text-sm text-center'>
+                Made With ❤️ by Mesias & Shawir
+              </p>
+            </div>
           </div>
         </main>
       </div>

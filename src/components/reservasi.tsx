@@ -121,10 +121,10 @@ const Reservasi = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className='text-white'>
-                    Konfirmasi Kehadiran
+                    Komentar atau Ucapan
                   </FormLabel>
                   <FormControl>
-                    <Textarea {...field} />
+                    <Textarea {...field} placeholder='Komentar atau Ucapan' />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
