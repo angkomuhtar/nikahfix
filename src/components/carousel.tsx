@@ -47,7 +47,7 @@ const CarouselPhoto = () => {
             Cooming Soon
           </span>
           <h1 className='font-sans text-white font-semibold text-sm'>
-            28 February 2025
+            20 April 2025
           </h1>
         </div>
         <div className='flex space-x-2 py-1 items-center'>

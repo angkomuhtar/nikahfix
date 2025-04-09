@@ -234,24 +234,24 @@ export default function Home() {
                     </h3>
                   </div>
                   <p className='text-sm text-white font-sans font-medium leading-5 my-1'>
-                    Jum&apos;at, 28 Februari 2025
+                    Minggu, 20 April 2025
                   </p>
                   <div className='px-2 py-1 bg-gray-600/70 flex justify-center items-center rounded-sm text-white space-x-2 place-self-start my-1'>
                     <Clock10Icon size={14} />
                     <h3 className='font-sans text-xs font-bold uppercase'>
-                      13:00 - 17:00 wita
+                      11:00 - 15:00 wita
                     </h3>
                   </div>
                   <div className='py-1 flex justify-center items-start rounded-sm text-white space-x-2 place-self-start my-1'>
                     <MapPinHouse size={24} />
                     <h3 className='font-sans text-xs font-bold'>
-                      Gedung DMI Kutai Kartanegara, Jl. Patin, Timbau,
-                      Tenggarong
+                      Gedung De&apos; Bollo Jl. Tumanurung Raya, Kalegowa, Kec.
+                      Somba Opu, Kab. Gowa
                     </h3>
                   </div>
 
                   <a
-                    href='https://maps.app.goo.gl/ud67CigoUVmpXLFt6'
+                    href='https://maps.app.goo.gl/3oBuxJWwRwBw22HXA?g_st=aw'
                     target='_blank'
                     className='cursor-pointer group flex justify-center items-center rounded-sm text-white space-x-2 place-self-start mt-1'>
                     <Navigation
@@ -277,27 +277,33 @@ export default function Home() {
               <h3 className='text-white text-center font-sans font-semibold text-xl mt-2 mb-4'>
                 Turut Mengundang
               </h3>
-              <ul className='text-white font-sans font-light text-xs grid grid-cols-2 gap-3 text-center'>
-                <li>
+              <ul className='text-white font-sans font-light text-sm grid grid-cols-2 gap-3 text-center'>
+                <li className='col-span-2'>
+                  <p>Keluarga Bapak Muh. Tahang (Alm) & Ibu Hj. Ruaena</p>
+                </li>
+                <li className='col-span-2'>
                   <p>Keluarga Bapak H. Liangto (Alm) & Ibu Hj. Rehana</p>
                 </li>
                 <li>
-                  <p>Keluarga Bapak Muh. Tahang (Alm) & Ibu Hj. Ruaena</p>
+                  <p>Halide & Indo Ufe (Almh.)</p>
                 </li>
                 <li>
-                  <p>Keluarga Ibu Hj. Maimunah (Alm)</p>
+                  <p>Ambo Asse, S.Pd. (Alm) & Ruaeni S., S.Pd. </p>
                 </li>
                 <li>
-                  <p>Keluarga Bapak H. Ir. Kusmainoor (Alm)</p>
+                  <p>Sarifuddin A., SE. & Sitti Fatimang</p>
+                </li>
+                <li className=''>
+                  <p>Abd. Rasyid & Jawariah</p>
                 </li>
                 <li>
-                  <p>Keluarga Ibu Hj. Hairunnisa</p>
+                  <p>H. Muh. Tahir & Hj. Sumarti</p>
                 </li>
-                <li>
-                  <p>Keluarga Bapak H. Faisal Idrus</p>
+                <li className=''>
+                  <p>Baso Ramdana & Etha Awaliyah</p>
                 </li>
                 <li className='col-span-2'>
-                  <p>Keluarga Bapak Ilham Firdaus Rizky Perkasa</p>
+                  <p>Suryadi, S.Pt. (Dg. Beta) & Aswinarti, S.Km.</p>
                 </li>
               </ul>
             </div>

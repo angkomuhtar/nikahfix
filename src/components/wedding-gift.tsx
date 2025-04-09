@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
-import { Copy, Gift, Wallet } from "lucide-react";
+import { Copy, Wallet } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import { toast } from "sonner";
@@ -38,7 +38,7 @@ const WeddingGift = () => {
             </AccordionTrigger>
             <AccordionContent className='p-4'>
               <div className='grid gap-y-4 w-full'>
-                <div className='border border-red-500 rounded-md text-white px-2 py-4 flex flex-col items-center justify-center space-x-2'>
+                {/* <div className='border border-red-500 rounded-md text-white px-2 py-4 flex flex-col items-center justify-center space-x-2'>
                   <Gift className='text-white h-14 w-14' />
                   <p className='font-sans mt-4 font-medium'>
                     Alamat Pengiriman Kado
@@ -64,7 +64,7 @@ const WeddingGift = () => {
                     }}>
                     <Copy className='h-8 w-8 text-white' /> Copy Alamat
                   </Button>
-                </div>
+                </div> */}
                 <div className='border border-red-500 rounded-md text-white p-2 grid w-full gap-4'>
                   <div className='w-full bg-[url(/card-bg.webp)] bg-center rounded-md px-5 py-4 flex flex-col'>
                     <div className='flex justify-between'>

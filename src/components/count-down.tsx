@@ -28,7 +28,7 @@ const CountDown = () => {
   setInterval(() => {
     setEventTime(
       moment.duration(
-        moment("2025-02-28 10:00:00", "YYYY-MM-DD HH:mm:ss").diff(moment())
+        moment("2025-04-20 10:00:00", "YYYY-MM-DD HH:mm:ss").diff(moment())
       )
     );
   }, 1000);
